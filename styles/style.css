@@ -96,6 +96,7 @@
 }
 .title-decor {
   background-color: var(--accent-color);
+  color: var(--main-heading-color);
 }
 .header__theme-menu-list {
   list-style-type: none;
@@ -225,12 +226,14 @@
   font-weight: var(--bold-font-weight);
   font-size: var(--main-text-size);
   line-height: var(--main-line-height);
+  color: var(--main-heading-color);
 }
 .text-block__subtitle {
   font-weight: var(--regular-font-weight);
   font-size: var(--main-text-size);
   line-height: var(--main-line-height);
   margin-top: 10px;
+  color: var(--main-heading-color);
 }
 .text-block__list {
   display: grid;

@@ -18,11 +18,9 @@
   --section-heading-color: #353430;
   --footer-logo-color: #ffc2e6;
   --main-heading-color: #353430;
+  --border-color-hover: #32312d66;
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-}
 @media (prefers-color-scheme: light) {
   :root {
     --background-image: url("../images/cover-image-light.png");

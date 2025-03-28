@@ -14,6 +14,11 @@
   --header-color: #db00ff;
   --accent-color: #ff0070;
   --text-color: #f1b2ce;
+  --header-logo-color: #db00ff;
+  --main-text-color: #f1b2ce;
+  --section-heading-color: #ff0070;
+  --nav-color: #ff0070;
+  --footer-logo-color: #db00ff;
 }
 
 .theme-dark .page {

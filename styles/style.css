@@ -13,7 +13,6 @@
   background-repeat: no-repeat;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
-
 .decorated-zone {
   position: relative;
 }
@@ -22,23 +21,21 @@
   content: "";
   inline-size: 25px;
   block-size: 25px;
-  border-block-start: 1px solid var(--accent-color);
-  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--section-heading-color);
+  border-inline-end: 1px solid var(--section-heading-color);
   inset-inline-end: var(--main-gap);
   inset-block-start: var(--main-gap);
 }
-
 .decorated-zone::after {
   position: absolute;
   content: "";
   inline-size: 25px;
   block-size: 25px;
-  border-block-end: 1px solid var(--accent-color);
-  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--section-heading-color);
+  border-inline-start: 1px solid var(--section-heading-color);
   inset-inline-start: var(--main-gap);
   inset-block-end: var(--main-gap);
 }
-
 .header {
   position: relative;
   display: grid;
@@ -52,7 +49,6 @@
 .header__theme-menu {
   justify-self: end;
 }
-
 .header__text {
   color: var(--main-heading-color);
   font-size: var(--main-text-size);
@@ -60,10 +56,10 @@
 
   line-height: var(--main-line-height);
 }
-
 .header_rec {
   position: absolute;
   align-self: start;
+  top: 0px;
 }
 .header_rec::before {
   position: absolute;
@@ -86,7 +82,6 @@
   inset-block-start: 18px;
   filter: drop-shadow(0px 0px 4px var(--accent-color));
 }
-
 .header__title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--header-logo-color);
@@ -104,7 +99,6 @@
   display: grid;
   gap: 10px;
 }
-
 .header__theme-menu-button {
   border: 1px solid transparent;
   text-transform: lowercase;
@@ -114,6 +108,7 @@
   line-height: 18px;
   padding: 1.5px 13px;
   block-size: 26px;
+  cursor: pointer;
 }
 .header__theme-menu-button:focus {
   outline: none;
@@ -125,11 +120,9 @@
   pointer-events: none;
   border-color: var(--nav-color);
 }
-
 .header__theme-menu-button:hover {
   border-color: var(--border-color-hover);
 }
-
 /* мейн*/
 .content {
   margin-block: 40px;
@@ -146,16 +139,17 @@
 .text-link:hover {
   border-bottom: 1px solid var(--main-text-color, #f1b2ce);
 }
-
 .text-link:focus-visible {
   outline: 1px solid var(--main-text-color, #f1b2ce);
 }
-
 .causes {
   .content-section__title {
     grid-column: 1/-1;
-    max-width: 236px;
+    max-width: 260px;
 
+    @media (width >= 768px) {
+      max-width: 236px;
+    }
     @media (width >= 1024px) {
       max-width: 280px;
     }
@@ -170,7 +164,6 @@
     }
   }
 }
-
 .content-section__title {
   color: var(--section-heading-color);
   font-size: var(--main-text-size);
@@ -208,12 +201,10 @@
   color: var(--main-text-color);
   font-size: var(--main-text-size);
 }
-
 /*Галерея*/
-
 .grid {
   display: grid;
-  grid-columns: 1/-1;
+  grid-column: 1/-1;
   gap: var(--main-gap);
   align-items: start;
 }
@@ -221,13 +212,12 @@
   grid-column: 1 / -1;
   font-size: var(--main-text-size);
 }
-
 .grid__img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  object-position: center;
 }
-
 /*футер*/
 .footer {
   padding: 10px;
@@ -243,7 +233,6 @@
   text-shadow: 2px 2px 0 var(--accent-color);
   line-height: 82.5%;
 }
-
 @media (width >= 768px) {
   :root {
     --main-gap: 20px;
@@ -252,13 +241,11 @@
   .header {
     padding: 20px;
   }
-
   .header__title {
     position: relative;
     margin-inline-start: -20px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
-
   .header__card {
     inline-size: 50%;
   }
@@ -266,28 +253,22 @@
     top: 10px;
     right: 10px;
   }
-
   .content {
     padding: 20px;
   }
-
   .content-section {
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: var(--main-gap);
   }
-
   .main {
     padding: 20px;
   }
   .footer {
     padding: 20px;
   }
-
   .grid__img {
-    width: 100%;
     height: 100%;
-    object-fit: cover;
   }
   .grid {
     display: grid;
@@ -313,7 +294,6 @@
     grid-row: 4 / 5;
   }
 }
-
 @media (width >= 1024px) {
   .header__theme-menu {
     align-self: start;

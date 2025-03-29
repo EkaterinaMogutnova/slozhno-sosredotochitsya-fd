@@ -21,6 +21,7 @@
   --border-color-hover: #32312d66;
 }
 
+
 @media (prefers-color-scheme: light) {
   :root {
     --background-image: url("../images/cover-image-light.png");

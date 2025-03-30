@@ -20,8 +20,9 @@
   --main-heading-color: #353430;
   --border-color-hover: #32312d66;
 }
-
-
+.theme-light .header_rec {
+  display: none;
+}
 @media (prefers-color-scheme: light) {
   :root {
     --background-image: url("../images/cover-image-light.png");
@@ -34,8 +35,7 @@
     --footer-logo-color: #ffc2e6;
     /* Дублируем переменные светлой темы */
   }
-  .theme-light .header_rec::before,
-  .theme-light .header_rec::after {
-    display: none;
+  .header_rec {
+    display: block;
   }
 }

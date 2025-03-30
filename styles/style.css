@@ -53,7 +53,6 @@
   color: var(--main-heading-color);
   font-size: var(--main-text-size);
   font-weight: var(--bold-font-weight);
-
   line-height: var(--main-line-height);
 }
 .header_rec {
@@ -128,7 +127,7 @@
   margin-block: 40px;
   font-size: var(--main-text-size);
   line-height: var(--main-line-height);
-  padding: 10px;
+  padding: 0px 10px;
   display: grid;
   gap: var(--card-gap);
 }

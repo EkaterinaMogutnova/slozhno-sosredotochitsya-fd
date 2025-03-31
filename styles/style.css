@@ -233,10 +233,6 @@
   line-height: 82.5%;
 }
 @media (width >= 768px) {
-  :root {
-    --main-gap: 20px;
-    --card-gap: 80px;
-  }
   .header {
     padding: 20px;
   }
@@ -259,9 +255,6 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: var(--main-gap);
-  }
-  .main {
-    padding: 20px;
   }
   .footer {
     padding: 20px;

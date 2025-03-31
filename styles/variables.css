@@ -22,3 +22,9 @@
   --regular-font-weight: 400;
   --card-gap: 50px;
 }
+@media (width >= 768px) {
+  :root {
+    --main-gap: 20px;
+    --card-gap: 80px;
+  }
+}

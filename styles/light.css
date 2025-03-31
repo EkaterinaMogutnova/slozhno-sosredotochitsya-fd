@@ -19,6 +19,7 @@
   --footer-logo-color: #ffc2e6;
   --main-heading-color: #353430;
   --border-color-hover: #32312d66;
+  --main-bg-color: #fff1f7;
 }
 .theme-light .header_rec {
   display: none;
